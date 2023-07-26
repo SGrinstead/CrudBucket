@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Owner>
+
+<h1>All Owners</h1>
+
+@foreach(var owner in Model)
+{
+	<p><a href="/owners/@owner.Id">@owner.Name</a></p>
+}
+
+<a href="/owners/new">Add an Owner</a>
